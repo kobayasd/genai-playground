@@ -66,7 +66,7 @@ cd cloud9-setup-for-prototyping
 Cloud9 のターミナル上で以下のコマンドを実行し、本リポジトリを clone します。
 
 ```
-git clone xxxx # リポジトリ公開後に修正
+git clone https://github.com/kobayasd/titan-image-inpaint
 ```
 
 ### デプロイ
