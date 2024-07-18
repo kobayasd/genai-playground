@@ -1,0 +1,49 @@
+# Python関連
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEやエディタ関連
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS関連
+.DS_Store
+Thumbs.db
+
+# CDK関連（すでに含まれているものもありますが、念のため）
+cdk.out/
+.cdk.staging/
+cdk.context.json
+
+# ログファイル
+*.log
+
+# 一時ファイル
+*.tmp
+*.bak
+*.swp
+*~.nib
+
+# 環境変数ファイル（セキュリティ上重要）
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Docker関連
+docker-compose.override.yml
+
+# その他
+node_modules/
+*.sqlite
