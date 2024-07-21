@@ -47,3 +47,9 @@ docker-compose.override.yml
 # その他
 node_modules/
 *.sqlite
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env
