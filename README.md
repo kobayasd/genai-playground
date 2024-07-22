@@ -105,3 +105,17 @@ cdk bootstrap
 ```
 cdk deploy
 ```
+
+デプロイ完了時に、アプリケーションの URL が出力されます。
+
+```
+Outputs:
+TitanInpainter.CloudFrontDistributionURL = ddh1msm2zhwg3.cloudfront.net
+```
+
+4. リソースの削除
+作成したリソースは以下のコマンドで削除が可能です。
+
+```
+cdk destroy
+```
