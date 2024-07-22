@@ -110,7 +110,7 @@ cdk deploy
 
 ```
 Outputs:
-TitanInpainter.CloudFrontDistributionURL = ddh1msm2zhwg3.cloudfront.net
+TitanInpainter.CloudFrontDistributionURL = xxxxxxx.cloudfront.net
 ```
 
 4. リソースの削除
