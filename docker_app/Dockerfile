@@ -11,6 +11,9 @@ RUN  pip3 install --upgrade pip && pip3 install -r requirements.txt
 RUN mkdir -p /root/.u2net && \
     wget -O /root/.u2net/u2net.onnx https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2net.onnx
 
+# テスト用の画像をコピー
+COPY img/wine.png /app/img/wine.png
+
 COPY . .
 
 # Command overriden by docker-compose

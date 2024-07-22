@@ -2,13 +2,8 @@
 
 このソリューションは、Amazon Bedrock の Titan Image Generator を利用して、元画像の背景のみ画像生成を行うことを可能にします。元画像の被写体にはプロンプトの影響が及ばないように、自動的にマスク生成を行っており、Titan Image Generator の Inpaint 機能で、マスク部分以外の生成を行っています。
 
-![Alt text](./img/top.jpg)
-
 ## Architecture Overview
-XXX
-
-## Demo
-XXX
+![Architecture Overview](./img/architecture.png)
 
 ## 機能
 
@@ -53,21 +48,34 @@ Yotsuba で撮影したコーヒーの背景を変換
 
 [Cloud9 Setup for Prototyping](https://github.com/aws-samples/cloud9-setup-for-prototyping) を利用して、開発環境用の Cloud9 を作成します。
 
-CloudShell ターミナルで以下のコマンドを実行して、Cloud9 を立ち上げましょう。
-
+1. CloudShell ターミナルを開く
+ 
+2. 以下のコマンドを実行して、Cloud9 を立ち上げる
+ 
 ```
 git clone https://github.com/aws-samples/cloud9-setup-for-prototyping
 cd cloud9-setup-for-prototyping
 ./bin/bootstrap
 ```
 
-リソースの作成が完了したら[Cloud9](https://console.aws.amazon.com/cloud9/home)のコンソールにアクセスし、`cloud9-for-prototyping` を開きましょう。
+2~3分待ち、`Done!` と表示されたら作成は完了です。
 
-Cloud9 のターミナル上で以下のコマンドを実行し、本リポジトリを clone します。
+3. cloud9 リソースの作成が完了したら[Cloud9](https://console.aws.amazon.com/cloud9/home)のコンソールにアクセスし、`cloud9-for-prototyping` を開く
+
+4. Cloud9 のターミナル上で以下のコマンドを実行し、本リポジトリを clone する
 
 ```
 git clone https://github.com/kobayasd/titan-image-inpaint
 ```
+
+5. クローンしたリポジトリを開く
+
+```
+cd titan-image-inpaint
+```
+
+以上で環境の準備は完了です。
+
 
 ### デプロイ
 
@@ -86,6 +94,7 @@ pip install -r requirements.txt
 3. CDK のデプロイ
 
 CDK を利用したことがない場合、初回のみ Bootstrap 作業が必要です。すでに Bootstrap された環境では以下のコマンドは不要です。
+※ 実行には 1~2 分ほどかかります
 
 ```
 cdk bootstrap
